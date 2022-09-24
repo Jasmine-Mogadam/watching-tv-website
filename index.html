@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>Watching TV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="viewport">
+      <img class="nose" src="nose.gif"/>
+      <img class="left-hand" src="left-hand.gif"/>
+      <img class="right-hand" src="right-hand.gif"/>
+      <img class="pet" src="pet.gif"/>
+      <div class="paralax-1">
+        <img class="tv" src="tv.gif"/>
+        <img class="screen" src="screen.gif"/>
+      </div>
+      <div class="paralax-2">
+        <img class="door" src="door.gif"/>
+        <div class="visitor">
+          <img class="head" src="head.gif"/>
+          <img class="body" src="body.gif"/>
+        </div>
+        <img class="side-wall" src="side-wall"/>
+      </div>
+      <div class="paralax-3">
+        <img class="curtains" src="curtains.gif"/>
+        <img class="sky" src="sky.gif"/>
+      </div>
+    </div>
+    <div class="control-panel">
+      <div class="container">
+        <div class="row">
+          <h1>Interact</h1>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <h3>Change the Room</h3>
+            <form>
+              <label for="fname">Skin Color</label><br>
+              <input type="color" id="skin-color" name="skin-color"><br>
+              <h4><label>Time of Day</label></h4><br>
+                <input type="radio" id="day" name="time-of-day" value="Day">
+                <label for="day">Day</label><br>
+                <input type="radio" id="noon" name="time-of-day" value="Noon">
+                <label for="noon">Noon</label><br>
+                <input type="radio" id="midnight" name="time-of-day" value="Midnight">
+                <label for="midnight">Midnight</label><br>
+              <h4><label>Visitor Customization</label></h4><br>
+                <h5><label>Visitor Head</label></h5><br>
+                  <input type="radio" id="monkey" name="visitor-head" value="Monkey">
+                  <label for="monkey">Monkey</label><br>
+                  <input type="radio" id="happy-d00d" name="visitor-head" value="Happy d00d">
+                  <label for="happy-d00d">Happy d00d</label><br>
+                  <input type="radio" id="shadow" name="visitor-head" value="Shadow">
+                  <label for="shadow">Shadow</label>
+                <h5><label>Visitor Body</label></h5><br>
+                  <input type="radio" id="banana" name="visitor-body" value="Banana">
+                  <label for="banana">Banana</label><br>
+                  <input type="radio" id="dress" name="visitor-body" value="Dress">
+                  <label for="dress">Dress</label><br>
+                  <input type="radio" id="shadow" name="visitor-body" value="Shadow">
+                  <label for="shadow">Shadow</label>
+            </form>
+          </div>
+          <div class="col-sm">
+            <h3>Play Specific Events</h3>
+            <form>
+              <input type="button" onclick="Visit()" value="A Visitor!"><br>
+              <input type="button" onclick="Curtain()" value="Curtains Up"><br>
+              <input type="button" onclick="Blink()" value="Blink"><br>
+              <input type="button" onclick="Pet()" value="Pet!">
+            </form>
+          </div>
+          <div class="col-sm">
+            <h3>Change the Channel</h3>
+            <form>
+              <input type="button" onclick="TvPower()" value="Turn Off the TV"><br>
+              <input type="button" onclick="changeChannel()" value="Next Channel"><br>
+              <input type="button" onclick="changeChannel()" value="Previous Channel"><br>
+              <input type="button" onclick="changeChannel()" value="Random Channel"><br>
+              <label for="url">Insert Video URL</label><br>
+              <input type="text" id="url" value="https:// ...">
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="event-console">
+            <h1>Event Console</h1>
+            events that are pending, deleted, or executing are put here
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
